@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+html {
+  scrollbar-width: none;
+  /* The store is designed for a light background, even in dark mode */
+  color-scheme: light;
+}
+
+body {
+  background-color: #ffffff;
+  color: #111827;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+/* Shared form field style used by the admin product forms */
+@layer components {
+  .input {
+    @apply h-11 w-full border border-gray-200 bg-white px-4 text-sm text-gray-900 outline-none transition placeholder:text-gray-400 focus:border-gray-500;
+  }
+
+  textarea.input {
+    @apply h-auto;
+  }
+}

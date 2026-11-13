@@ -1,0 +1,17 @@
+{
+  "name": "sudd-ecommerce",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Sudd Shop: React store (client) + Express API (server)",
+  "type": "module",
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "scripts": {
+    "setup": "node scripts/setup.mjs",
+    "dev": "node scripts/dev.mjs",
+    "start": "node scripts/dev.mjs",
+    "server": "npm --prefix server run dev:local",
+    "client": "npm --prefix client run dev"
+  }
+}
